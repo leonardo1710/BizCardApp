@@ -89,9 +89,12 @@ fun BizCard() {
 
                 ProfileInfo()
 
-                Button(onClick = {
-                    showPortfolio.value = !showPortfolio.value
-                }) {
+                Button(
+                    shape = RectangleShape,
+                    onClick = {
+                        showPortfolio.value = !showPortfolio.value
+                    }
+                ) {
                     Text("Show Projects",
                         style = MaterialTheme.typography.labelMedium)
                 }
